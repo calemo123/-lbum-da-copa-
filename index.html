@@ -1,0 +1,49 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+<title>album da copa 2022</title>
+
+</head>
+<body>
+<center>
+
+<h1>Meu álbum de figurinhas</h1>
+
+<img  id="img_album" src="https://classic.exame.com/wp-content/uploads/2022/08/Capa-do-album-Copa-do-Mundo.jpg?quality=70&strip=info&w=643">
+
+<h2 id="jogador">qatar</h2>
+
+<button onclick="proximo1()">próximo</button>
+
+</center>
+
+<script>
+
+var jogadores = ["https://classic.exame.com/wp-content/uploads/2022/08/Capa-do-album-Copa-do-Mundo.jpg?quality=70&strip=info&w=643","ney.jpg","messi.png","cristiano ronaldo.jpeg","mbappé.jpg"];
+
+var nome = ["qatar","neymar","messi","cristiano","mbappé"]
+
+var i = 0;
+
+function proximo1()
+{
+
+i++;
+var número = 5;
+if(i > número)
+{
+ i = 0;
+
+}
+
+document.getElementById("img_album").src = jogadores[i]
+document.getElementById("jogador").innerHTML=nome[i];
+
+}
+
+</script>
+
+</body>
+</html>
